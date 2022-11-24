@@ -60,7 +60,19 @@
         <!--input type="text" placeholder="Company Name" name="name"-->
         <button type="button" onclick="newCompany()" id="submitButton">Submit</button>
     </form>
-    
+    <button onclick="logIn()" id="login-button">Log In</button>
+    <form name="loginInfo" style="display:none;" id="loginInfo">
+        <input type="text" name="username" placeholder="What's your username">
+        <input type="password" placeholder="Your Password please">
+        <ul>
+            <li id="valid_min_8">Minumun 8 Characters</li>
+            <li id="valid_upper">At least one Upper case</li>
+            <li id="valid_lower">At least one Lower case</li>
+            <li id="valid_one_num">At least one numerical Character</li>
+            <li id="valid_special_char">At least one Special Character</li>
+        </ul>
+        <input type="password" placeholder="Confirm your password">
+    </form>
 
 </body>
 

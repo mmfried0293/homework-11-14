@@ -142,3 +142,6 @@ function removeCompany(i) {
     tradableCompanies.splice(i, 1);
     writeTable()
 }
+function logIn(){
+    document.getElementById('loginInfo').style.display='block';
+}
