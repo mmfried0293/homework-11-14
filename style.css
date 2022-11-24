@@ -1,0 +1,104 @@
+body {
+    text-align: center;
+}
+
+td {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    /*border-collapse: collapse;*/
+}
+
+th {
+    size: 100 px;
+    border: 1px;
+    border-style: solid;
+    border-color: green;
+    padding: 5px;
+}
+
+table {
+    padding: 10px;
+    border: 1pk;
+    border-style: solid;
+    border-color: blue;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+
+}
+
+
+button {
+    cursor: pointer;
+    width: 80%;
+    height: 70%;
+    background-color: blue;
+    border-color: aquamarine;
+    color: antiquewhite;
+}
+
+#button-buy {
+    background-color: blue;
+    border-color: aquamarine;
+    color: antiquewhite;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.name-cell {
+    padding: 10px;
+    font-size: large;
+    font-weight: 100;
+    font-style: italic;
+    background-color: azure;
+}
+
+.logo-cell {
+    padding: 10px;
+    background-color: bisque;
+}
+
+.price-cell {
+    padding: 20px;
+    background-color: azure;
+    font-weight: bolder;
+}
+
+.ticker-cell {
+    background-color: bisque;
+    font-weight: bolder;
+
+}
+
+.amount-cell {
+    background-color: azure;
+    font-weight: bolder;
+
+}
+
+.value-cell {
+    background-color: bisque;
+    font-weight: bolder;
+}
+
+.button-cell {
+    background-color: azure
+}
+
+.remove-button-cell {
+    background-color: bisque;
+}
+
+#button-remove {
+    color: red;
+    background-color: wheat;
+}
+
+header {
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}

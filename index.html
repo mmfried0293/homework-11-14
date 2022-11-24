@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Interactive Stock Exchange</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    Stock Exchange 1.0 Beta <br> Chap Arein as long as you can buy with paper money!
+</header>
+
+<body>
+    
+    <table>
+        <tr>
+            <thead>
+                <th>
+                    Company Name
+                </th>
+                <th>
+                    Logo
+                </th>
+                <th>
+                    Price
+                </th>
+                <th>
+                    Ticker
+                </th>
+                <th>
+                    Amount of Stocks
+                </th>
+                <th>
+                    Total Value
+                </th>
+                <th>
+                    Buying Options
+                </th>
+                <th>
+                    Manage Your Stocks
+                </th>
+
+            </thead>
+        </tr>
+        <tbody id="table-body">
+            <tr>
+                <script src="./script.js"></script>
+            </tr>
+        </tbody>
+
+    </table>
+    <button onclick="addCompany()" id="add-company-button">Add another company</button>
+    <form name="addCompanyInfo" style="display:none;" id="addCompanyInfo">
+        <input type="text" placeholder="Company Name" name="name">
+        <input type="number" placeholder="Company Current Price" name="price">
+        <input type="text" placeholder="Company Ticker" name="ticker">
+        <!--input type="text" placeholder="Company Name" name="name"-->
+        <button type="button" onclick="newCompany()" id="submitButton">Submit</button>
+    </form>
+    
+
+</body>
+
+</html>
