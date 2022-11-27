@@ -145,3 +145,39 @@ function removeCompany(i) {
 function logIn(){
     document.getElementById('loginInfo').style.display='block';
 }
+
+let now = new Date();
+let hours = now.getHours();
+let minutes = now.getMinutes();
+let weekday = now.getDay();
+
+function writeMarketSchedule() {
+    if (hours >= 9.5 && hours <= 16){
+        document.getElementById('schedule').innerHTML = `Markets close at 4 PM, you can trade for another ${15 - hours} hours and ${60 - minutes} minutes`;
+        document.getElementById('body').style.backgroundColor= 'darkblue';
+        document.getElementById('date', 'schedule',).style.color= 'wheat';
+    }
+    if (hours >= 9.5) {
+        document.getElementById('schedule').innerHTML = `Markets open at 9:30 AM, you can trade in another ${9.5 - hours} hours and ${60 - minutes} minutes`;
+        document.getElementById('body').style.backgroundColor= 'darkblue';
+        document.getElementById('date', 'schedule',).style.color= 'wheat';
+    } if (hours <= 16) {
+        document.getElementById('schedule').innerHTML = `Markets closed at 4 PM, you were able to trade till ${hours - 16} hours and ${minutes} minutes ago`;
+        document.getElementById('body').style.backgroundColor= 'darkblue';
+        document.getElementById('date', 'schedule',).style.color= 'wheat';
+    } if (weekday = 0 || 6){
+        document.getElementById('schedule').innerHTML = `Markets are closed for the weekend , trading will resume on Monday at 9:30 AM.`; 
+        document.getElementById('body').style.backgroundColor= 'darkblue';
+        document.getElementById('date', 'schedule',).style.color= 'wheat';
+
+
+    }
+}
+
+writeMarketSchedule();
+
+setInterval(function () {
+    let now = new Date().toLocaleString();
+    document.getElementById('date').innerHTML = now;
+}, 1000);
+
